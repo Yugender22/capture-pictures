@@ -1,0 +1,33 @@
+# capture-pictures
+
+A module that help to capture pictures of any object and returns the list of captured images
+
+## Installation
+
+```sh
+npm install capture-pictures
+```
+
+## Usage
+
+
+```js
+import { multiply } from 'capture-pictures';
+
+// ...
+
+const result = await multiply(3, 7);
+```
+
+
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+
+## License
+
+MIT
+
+---
+
+Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
