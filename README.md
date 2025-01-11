@@ -22,6 +22,14 @@ import { CapturePictures, type Result } from 'capture-pictures';
 />
 ```
 
+## If you need to test it, you can run the example project
+
+```
+yarn install
+
+yarn android
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
