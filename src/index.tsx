@@ -17,6 +17,9 @@ const CapturePictures = NativeModules.CapturePictures
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return CapturePictures.multiply(a, b);
-}
+export const captureImage = (): Promise<string> => {
+  return CapturePictures.captureImage();
+};
+
+export * from './components/CapturePictures';
+export * from './model/Result';

@@ -5,20 +5,22 @@ A module that help to capture pictures of any object and returns the list of cap
 ## Installation
 
 ```sh
-npm install capture-pictures
+yarn add capture-pictures
 ```
 
 ## Usage
 
-
 ```js
-import { multiply } from 'capture-pictures';
+import { CapturePictures, type Result } from 'capture-pictures';
 
-// ...
-
-const result = await multiply(3, 7);
+// Add this inside the component render
+<CapturePictures
+  steps={4}
+  onCaptureComplete={(result: Result[]) => {
+    console.log(result);
+  }}
+/>
 ```
-
 
 ## Contributing
 
