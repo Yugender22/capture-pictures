@@ -25,6 +25,8 @@ import { CapturePictures, type Result } from 'capture-pictures';
 ## If you need to test it, you can run the example project
 
 ```
+cd example
+
 yarn install
 
 yarn android
