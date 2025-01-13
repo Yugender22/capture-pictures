@@ -74,21 +74,6 @@ class CapturePicturesModule(private val reactContext: ReactApplicationContext) :
     }
   }
 
-  fun showAlert(context: Context, title: String, message: String) {
-    val builder = AlertDialog.Builder(context)
-    builder.setTitle(title)
-    builder.setMessage(message)
-    builder.setPositiveButton("OK") { dialog, _ ->
-      dialog.dismiss() // Close the dialog
-    }
-    builder.setNegativeButton("Cancel") { dialog, _ ->
-      dialog.dismiss() // Close the dialog
-    }
-
-    // Show the dialog
-    builder.create().show()
-  }
-
   override fun onActivityResult(
     activity: Activity?,
     requestCode: Int,
@@ -96,7 +81,7 @@ class CapturePicturesModule(private val reactContext: ReactApplicationContext) :
     data: Intent?
   ) {
     if (requestCode == REQUEST_IMAGE_CAPTURE) {
-      Log.e("onActivityResult", "${resultCode}")
+      Log.d("onActivityResult", "${resultCode}")
 
       if (resultCode == Activity.RESULT_OK) {
         promise?.resolve(imageUri.toString())
